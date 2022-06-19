@@ -1,0 +1,45 @@
+
+\newcommand{\bookwork}[1]{{\bf BOOKWORK[ #1 ] }}
+
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+
+  \definecolor{jblue}  {RGB}{20,50,100}
+  \definecolor{lblue}  {RGB}{40,100,240}
+  \definecolor{npurple}  {RGB} {153, 51, 204}
+  \definecolor{wred}   {RGB}{217,0,56}
+  \definecolor{white}   {RGB}{255,255,255}
+  
+  \definecolor{korange}   {RGB}{235, 80,  43}
+  \definecolor{korange2}   {RGB}{245, 100,  63}
+  \definecolor{kyelloworange}   {RGB}{255, 210,  110}
+  \definecolor{kyelloworange2}   {RGB}{240, 170,  90}
+  \definecolor{kred}   {RGB}{204,  102, 153}
+  \definecolor{kpurple}   {RGB}{153,  61, 190}
+  \definecolor{kpurplelight}   {RGB}{213,  161, 230}
+
+          % Define styles for the different kind of edges in a Feynman diagram
+  \tikzset{
+    photon/.style={decorate, decoration={snake}, draw=npurple,very thick},
+    boson/.style={decorate, decoration={snake}, draw=npurple,very thick},
+    electron/.style={draw=jblue,very thick, postaction={decorate},
+             decoration={markings,mark=at position .55 with {\arrow[draw=jblue]{>}}}
+    },
+    electron2/.style={draw=jblue,very thick, postaction={decorate},
+             decoration={markings,mark=at position .55 with {\arrow[draw=jblue]{<}}}
+    },
+    fermion/.style={draw=jblue,very thick, postaction={decorate},
+              decoration={markings,mark=at position .55 with {\arrow[draw=jblue]{}}}
+    },
+    gluon/.style={decorate, draw=korange,very thick, %kred
+      decoration={coil,amplitude=4pt, segment length=6pt}},
+    higgs/.style={draw=wred,very thick, postaction={decorate},
+             decoration={markings,mark=at position .55 with {\arrow[draw=wred]{>}}}
+    },
+    nothing/.style={draw=white,very thick}
+  }
+
+

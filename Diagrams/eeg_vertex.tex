@@ -1,0 +1,31 @@
+\documentclass{article}
+%\showanswerstrue
+
+
+
+%\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[compat=1.0.0]{tikz-feynman}
+%\usepackage{tikz-feynman}
+\usepackage{hyperref}
+
+
+
+
+
+\begin{document}
+
+\feynmandiagram [scale=0.5,transform shape] [small, horizontal=a to b, baseline=($0.9*(a)$)] { 
+i1 -- [fermion] a -- [fermion] i2,
+                a -- [photon, 
+%edge label=\(\gamma\)
+%edge label=(type $k$)
+] b, };
+
+\end{document}
+
+

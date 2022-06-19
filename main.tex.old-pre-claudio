@@ -1,0 +1,122 @@
+\documentclass{NSTexam}
+\showanswerstrue
+%git clone https://git.overleaf.com/61e43e46c2ac07e4711f8acf
+\noversion
+
+%\documentclass{article}
+%\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{xcolor}
+\usepackage{afterpage}
+%\usepackage{tikz}
+\usepackage{cancel}
+%\usepackage[compat=1.0.0]{tikz-feynman}
+%\input{feyn_tikz.tex}
+
+\usepackage{hyperref}
+
+
+\newcommand\fra{\frac{|\vec p|}{E+m}}
+\newcommand\expi{e^{i\phi}}
+
+\newcommand\hide[1]{{}}
+\newcommand\ANS[1]{{
+
+\answer 
+
+{\color{blue}
+#1
+}
+\endanswer
+
+}}
+
+
+\newcommand\alig[1]{{\begin{align}#1\end{align}}}
+\newcommand\com[2]{{
+\left[#1,#2\right]
+}}
+\newcommand\anticom[2]{{
+\left\{#1,#2\right\}
+}}
+\newcommand\unit{
+\mathbbm{1}
+}
+\newcommand\matTwoTwo[4]{
+\left(\begin{array}{cc}
+#1 & #2 \\ #3 & #4
+\end{array}\right)
+}
+\newcommand\vecTwo[2]{
+\left(\begin{array}{c}
+#1 \\ #2 
+\end{array}\right)
+}
+\newcommand\vecFour[4]{
+\left(\begin{array}{c}
+#1 \\ #2 \\ #3 \\ #4 
+\end{array}\right)
+}
+
+%\title{Notes}
+%\author{kesterlester }
+%\date{November 2020}
+
+\begin{document}
+
+\tripos{NATURAL SCIENCES TRIPOS Part II} 
+%\tripos{NATURAL SCIENCES TRIPOS:\qquad Part III Astrophysics} 
+%\tripos{MASTER OF ADVANCED STUDY IN PHYSICS} 
+%\tripos{{\color{red}[Are there too many or too few triposes and courses listed above?]}}
+\date{Friday 3rd June 2022 \qquad 09:00 to 11:00} % TIME ADAPTED LAST MINUTE FOR CORONAVIRUS REASONS
+%\date{Tuesday 19th January 2021 \qquad 14:00 to 16:00} % ORIGINAL DATE NAND TIEM
+\paper{PHYSICS (6)}
+\paper{PHYSICAL SCIENCES: HALF SUBJECT PHYSICS (6)}
+\paper{\phantom{MOO}}
+\paper{PARTICLE AND NUCLEAR PHYSICS}
+\begin{rubric}Candidates offering this paper should attempt a total of \textbf{five} questions: \textbf{three} questions from Section A and \textbf{two} questions from Section B.
+
+Natural units of $\hbar = c = \mu_0 = \epsilon_0 = 1$ are used throughout this paper.
+
+The approximate number of marks allocated to each question or part of a question is indicated in the right margin. This paper contains 10 sides, including this coversheet, and is accompanied by a handbook giving values of constants and containing mathematical formulae which you may quote without proof.
+\end{rubric}
+\requirements{$2\times 20$ Page Answer Book\\Metric graph paper\\Rough workpad\\Yellow master coversheet}{Mathematical Formulae handbook\\Approved calculator allowed} \warning
+
+
+%\newpage
+%\thispagestyle{plain} % empty
+%\mbox{}
+
+\clearpage
+
+\section{A \\ \em Attempt \textbf{all} questions in this Section.  Answers should be concise and relevant formulae may be assumed without proof.}
+
+\begin{questions}
+
+
+
+\input{questions_sec_A.tex}
+
+\clearpage
+
+\section{B\\\em Attempt \textbf{two} questions from this Section.}
+
+\question
+\input{question_23Na_gamma_decay}
+\vspace{3cm}
+\question
+\input{question_baryon_mass}
+\clearpage
+\question
+\input{question_hyperons} 
+\end{questions}
+
+
+
+
+\endofpaper
+\end{document}
+
+
